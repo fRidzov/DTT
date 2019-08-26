@@ -87,7 +87,7 @@ public class Main {
         List<String> emails = new ArrayList<>();
 
         List<String> list = new ArrayList<>(availableConferenceDates);
-        list.sort(Collections.reverseOrder());
+        Collections.sort(list);
         Set<String> resultSet = new LinkedHashSet<>(list);
 
         for (String date : resultSet) {
